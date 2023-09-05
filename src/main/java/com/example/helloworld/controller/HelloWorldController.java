@@ -1,8 +1,6 @@
 package com.example.helloworld.controller;
 
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties.Jedis;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import redis.clients.jedis.Jedis;
 
 @RestController
 public class HelloWorldController {
@@ -13,7 +11,7 @@ public class HelloWorldController {
     }
 
     @GetMapping("ping")
-    public ping(){
+    public String ping(){
         // Replace these values with your Redis server configuration
         String redisHost = "localhost"; // Redis server host
         int redisPort = 6379;          // Redis server port
@@ -31,5 +29,7 @@ public class HelloWorldController {
 
         // Close the Jedis connection when you're done
         jedis.close();
+
+        return response;
     }
 }
