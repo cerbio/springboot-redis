@@ -38,7 +38,7 @@
 
 
 **Check connectivity with local Redis database**
-  <br/>```curl --request GET 'http://localhost:8080/hello'```
+  <br/>```curl --request GET 'http://localhost:8080/ping'```
 
 
 ## How to Run Unit Test Cases
