@@ -37,6 +37,10 @@
   <br/>```curl --request GET 'http://localhost:8080/hello'```
 
 
+**Check connectivity with local Redis database**
+  <br/>```curl --request GET 'http://localhost:8080/hello'```
+
+
 ## How to Run Unit Test Cases
 
 **Run the test cases using any of the commands mentioned below**
