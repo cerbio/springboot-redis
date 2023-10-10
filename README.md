@@ -1,8 +1,15 @@
-# Spring Boot 3.x Hello World
+# Spring Boot + Redis 3.x Hello World
 
 **A simple Spring Boot 3.x app to send hello world message to a user**
 
 > **Note:** **Spring Boot 3.x** requires **Java 17** as a minimum version. Make sure you are using Java 17 or beyond for Spring Boot 3.x projects.
+
+
+## How to setup the development environment
+From DevSpaces simply create a new workspace and pass the url of the repository: https://github.com/cerbio/springboot-redis.git
+
+The devfile will create a new development environment where the REDIS DB will be accessible at 127.0.0.1:6379.
+For detailed configuration check the HelloWorld example code.
 
 ## How to Run Application
 
